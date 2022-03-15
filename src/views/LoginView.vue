@@ -40,7 +40,7 @@ function doLogin() {
 <template>
   <div class="login-wrapper">
     <div class="left">
-      <img src="../assets/te.jpg" alt="dasdas" />
+      <img src="../assets/te.jpg" alt="image" />
     </div>
     <div class="right">
       <form class="login" @submit.prevent="doLogin">
@@ -133,6 +133,10 @@ img {
   border-radius: 10px;
   cursor: pointer;
   order: 2;
+  transition: 0.2s;
+}
+.btn-login:hover {  
+  background-color:#3653c7dc;
 }
 .forgot-login {
   display: flex;

@@ -39,7 +39,7 @@ function doRegister() {
 <template>
   <div class="login-wrapper">
     <div class="left">
-      <img src="../assets/te.jpg" alt="dasdas" />
+      <img src="../assets/te.jpg" alt="image" />
     </div>
     <div class="right">
       <form class="login" @submit.prevent="doRegister">
@@ -73,9 +73,6 @@ function doRegister() {
 </template>
 
 <style scoped>
-.left {
-  /* order: 1; */
-}
 .forgot-login {
   justify-content: flex-end;
 }
