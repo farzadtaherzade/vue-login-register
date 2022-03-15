@@ -75,4 +75,7 @@ function doRegister() {
 .forgot-login {
   justify-content: flex-end;
 }
+h2 { 
+  max-width: 360px;
+}
 </style>
