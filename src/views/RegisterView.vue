@@ -12,8 +12,7 @@ const state = reactive({
 })
 
 function doRegister() {
-  console.log(state.email)
-  console.log(state.password)
+
 
   fetch('https://api.freerealapi.com/auth/register', {
     method: 'POST',
@@ -26,7 +25,7 @@ function doRegister() {
   })
     .then((response) => response.json())
     .then((json) => {
-      if(json.status == 201) {
+      if (json.status == 201) {
         router.push("/login")
       }
     })
@@ -48,7 +47,7 @@ function doRegister() {
             Already have an account?
             <RouterLink :to="{ name: 'login' }" class="link">Login</RouterLink>
           </p>
-          <h2>Login to your account</h2>
+          <h2>Create Your FireBlog Account</h2>
         </div>
         <div class="inputs">
           <div class="input">
