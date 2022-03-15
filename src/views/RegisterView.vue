@@ -26,9 +26,9 @@ function doRegister() {
   })
     .then((response) => response.json())
     .then((json) => {
-      console.log(json)
-      // store.commit('register')
-      router.push("/login")
+      if(json.status == 201) {
+        router.push("/login")
+      }
     })
 
 

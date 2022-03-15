@@ -24,7 +24,6 @@ function doLogin() {
   })
     .then((response) => response.json())
     .then((json) => {
-      console.log(json)
       if (json.status == 200) {
         toast.success("Your login was success", {
           timeout: 1800
@@ -166,10 +165,6 @@ img {
   .right,
   .left {
     flex-basis: 100%;
-  }
-  body {
-    background: url("../assets/image.jpg");
-    /* background-repeat: no-repeat; */
   }
 }
 </style>

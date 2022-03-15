@@ -36,4 +36,9 @@ function doLogout() {
   cursor: pointer;
   order: 2;
 }
+@media (max-width: 900px){
+  body {
+    background:none;
+  }
+}
 </style>
